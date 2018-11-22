@@ -1,0 +1,28 @@
+########拨测软件配置文件#####
+#请不要随意改变该文件的格式，包括注释部分
+#否则可能导致程序启动异常
+
+#dial process port
+port=9092
+#Agent info
+port=9294
+ip=127.0.0.1
+#server dial config
+health=5000
+delay_weight=100
+lost_weight=2000
+count=5
+timeout=60
+interval=10
+dname=www.sina.com
+#日志配置，级别为1,2,3,4
+#1：单一的数据信息，如队列中任务的数量，正在运行线程的数量。
+#2：基本信息，必要的信息打印，如启动时的配置信息和操作和配置下发信息,任务上报信息。
+#3：系统调试信息，比如一些策略拨测成功失败的基本信息。
+#4：出错信息，所有日志全部打印。
+#log config
+path=/var/log/
+level=1
+#https openssl 校验证书文件配置，全路径名
+#certificate config
+path=/etc/dial_cert.pem
